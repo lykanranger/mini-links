@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
   setTimeout(() => {
     loadingContainer.style.display = 'none';
-    // window.location.href = 'https://your-website-url.com';
   }, 3000); 
+});
+
+/*Particles.js*/ 
+particlesJS.load("particles-js", "particles.json", function() { 
+  console.log("Particles.js config loaded"); 
 });
