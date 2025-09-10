@@ -21,8 +21,3 @@ document.addEventListener('DOMContentLoaded', function() {
     loadingContainer.style.display = 'none';
   }, 3000); 
 });
-
-/*Particles.js*/ 
-particlesJS.load("particles-js", "particles.json", function() { 
-  console.log("Particles.js config loaded"); 
-});
