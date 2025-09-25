@@ -1,12 +1,3 @@
-const islandBar = document.querySelector('.island__bar');
-
-islandBar.addEventListener('click', () => {
-  islandBar.classList.add('glitch');
-  setTimeout(() => {
-    islandBar.classList.remove('glitch');
-  }, 500);
-});
-
 // /*Loading*/ 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -21,3 +12,4 @@ document.addEventListener('DOMContentLoaded', function() {
     loadingContainer.style.display = 'none';
   }, 3000); 
 });
+
