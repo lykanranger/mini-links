@@ -155,6 +155,45 @@
     border-radius: 50%;
   }
 
+  .music-wave {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  height: 15px;
+}
+
+.music-wave span {
+  display: block;
+  width: 3px;
+  height: 100%;
+  margin: 0 2px;
+  background-color: #39FF14;
+  border-radius: 2px;
+  animation: wave-animation 1.2s ease-in-out infinite alternate;
+}
+
+.music-wave span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.music-wave span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+.music-wave span:nth-child(4) {
+  animation-delay: -0.6s;
+}
+
+@keyframes wave-animation {
+  from {
+    transform: scaleY(0.1);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
   .avatar {
     width: var(--avatar-size);
     aspect-ratio: 1;
@@ -384,4 +423,3 @@ li a {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }
 }
-
