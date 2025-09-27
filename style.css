@@ -6,8 +6,8 @@
   :root {
     --accent: hsl(10 20% 30%);
     --island-margin: 20px;
-    --island-height: 40px;
-    --island-width: 200px;
+    --island-height: 50px;
+    --island-width: 250px;
     --avatar-size: calc(var(--island-width) * 0.65);
     --avatar-position: calc(
       var(--island-height) + (var(--island-margin) * 1.25)
@@ -143,16 +143,14 @@
     cursor: pointer;
   }
 
-  .island__bar::after {
-    content: '';
+  .island-icon {
     position: absolute;
-    left: 0%;
-    top: 0%;
-    height: 100%;
-    aspect-ratio: 1;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: auto;
     z-index: 2;
-    background: radial-gradient(red calc(30% - 1px), transparent 30%);
-    border-radius: 50%;
   }
 
 .music-wave {
@@ -170,7 +168,7 @@
   width: 3px;
   height: 100%;
   margin: 0 2px;
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #00BFFF, #ffffff);
   border-radius: 3px;
   animation-name: iphone-wave-animation;
   animation-timing-function: linear;
