@@ -6,8 +6,8 @@
   :root {
     --accent: hsl(10 20% 30%);
     --island-margin: 20px;
-    --island-height: 50px;
-    --island-width: 250px;
+    --island-height: 40px;
+    --island-width: 200px;
     --avatar-size: calc(var(--island-width) * 0.65);
     --avatar-position: calc(
       var(--island-height) + (var(--island-margin) * 1.25)
@@ -429,3 +429,4 @@ li a {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }
 }
+
