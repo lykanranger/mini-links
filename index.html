@@ -17,15 +17,15 @@
   <header>
     <div class="island__container">
       <div class="island">
-          <div class="island__bar">
-            <img src="img/AirPodsPro.jpg" alt="AirPods Pro" class="island-icon">
-            <div class="music-wave">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>        
+        <div class="island__bar">
+          <div class="red-circle"></div> <img src="img/AirPodsPro.jpg" alt="AirPods Pro" class="island-icon" id="airpods-icon">
+          <div class="music-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>        
         <div class="avatar">
           <img src="img/avatar.jpeg" alt="Your avatar" />
         </div>
@@ -83,13 +83,6 @@
 
   <svg width="0" height="0" class="sr-only" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.1">
     <defs>
-      <filter id="old-goo">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-        <feColorMatrix in="blur" mode="matrix"
-          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-          result="goo" />
-        <feBlend in="SourceGraphic" in2="goo" />
-      </filter>
       <filter id="fancy-goo">
         <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
         <feColorMatrix in="blur" mode="matrix"
@@ -104,8 +97,6 @@
     MADE BY <img src="img/batlogo.svg" alt="Bat Logo" class="author-logo"> KARUN 
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script> 
 </body>
 </html>
-
-
