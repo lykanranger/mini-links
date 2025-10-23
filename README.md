@@ -24,13 +24,7 @@ A simple and responsive Linktree-style personal links page built using HTML, CSS
 
 - JavaScript (ES6) – Interactivity and link redirection
 
-📁 Project Structure
-/linktree-project
-│
-├── index.html        # Main HTML file  
-├── style.css         # Styling and layout  
-├── script.js         # JS logic for redirection and animations  
-└── assets/           # Icons, images, or background assets  
+  
 
 🔗 Live Demo
 
