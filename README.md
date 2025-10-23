@@ -14,7 +14,7 @@ A simple and responsive Linktree-style personal links page built using HTML, CSS
 - Lightweight: Built with pure HTML, CSS, and JS ⚡.
 
 - Centralized Access: Acts as a single hub for all online profiles 🔗.
-- 
+
 
 🛠️ Technologies Used
 
@@ -25,11 +25,6 @@ A simple and responsive Linktree-style personal links page built using HTML, CSS
 - JavaScript (ES6) – Interactivity and link redirection
 
   
-
 🔗 Live Demo
 
 👉 View Project : https://my-socialmedia-links.netlify.app/
-
-📜 License
-
-This project is open-source and available under the MIT License.
