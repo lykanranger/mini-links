@@ -5,15 +5,15 @@ A simple and responsive Linktree-style personal links page built using HTML, CSS
 
 🚀 Features
 
-- Redirect Links: Each button redirects to the respective social media handle 🧭.
+- Redirect Links: Each button redirects to the respective social media handle.
 
-- Responsive Design: Works smoothly on all devices — desktop, tablet, and mobile 💻.
+- Responsive Design: Works smoothly on all devices — desktop, tablet, and mobile.
 
--  Custom Styling: Clean UI with hover effects and personalized colors 🎨.
+-  Custom Styling: Clean UI with hover effects and personalized colors.
 
-- Lightweight: Built with pure HTML, CSS, and JS ⚡.
+- Lightweight: Built with pure HTML, CSS, and JS.
 
-- Centralized Access: Acts as a single hub for all online profiles 🔗.
+- Centralized Access: Acts as a single hub for all online profiles.
 
 
 🛠️ Technologies Used
