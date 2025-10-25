@@ -1,5 +1,7 @@
 🌐 My Linktree Project
 
+![Uploading image.png…]()
+
 A simple and responsive Linktree-style personal links page built using HTML, CSS, and JavaScript. This project showcases all my social media and portfolio links, allowing visitors to easily connect with me through a single, centralized page.
 
 
