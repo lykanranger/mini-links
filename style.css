@@ -431,3 +431,15 @@ li a {
   image-rendering: crisp-edges;
   image-rendering: -webkit-optimize-contrast;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
