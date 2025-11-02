@@ -29,4 +29,4 @@ A simple and responsive Linktree-style personal links page built using HTML, CSS
   
 🔗 Live Demo
 
-👉 View Project : https://my-socialmedia-links.netlify.app/
+👉 View Project : https://karunbinny.netlify.app/
