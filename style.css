@@ -421,13 +421,3 @@ li a {
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
-
-.author-logo {
-  width: 50px;
-  height: auto;
-  vertical-align: middle;
-  margin-left: 5px;
-  animation: pulse 2s infinite;
-  image-rendering: crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-}
