@@ -10,9 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
       
       setTimeout(() => {
         islandBar.classList.add('show-airpods');
-      }, 500);
+      }, 2500);
       
     }, 500);
     
   }, 4500);
 });
+
