@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // TYPING ANIMATION
 
 var typed = new Typed('.typing-text', {
-    strings: ['Designed by Karun', '© 2025 All Rights Reserved'],
+    strings: ['Designed by <span class="highlight-name">Karun</span>', '© 2025 All Rights Reserved'],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 1000,
