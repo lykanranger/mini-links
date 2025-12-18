@@ -330,3 +330,15 @@ li a {
 .island__bar {
   position: relative;
 }
+
+ul li:last-child {
+    background: transparent !important;
+    box-shadow: none !important;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center; 
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: rgb(152, 152, 152);
+    letter-spacing: 1px;   
+}
