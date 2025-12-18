@@ -218,13 +218,13 @@
   }
 
 main {
-    min-height: 85vh;
+    min-height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    padding-top: 15vh; 
+    padding-top: 20vh; 
   }
 
   .header-logo-img {
