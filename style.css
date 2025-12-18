@@ -1,3 +1,4 @@
+
 @import url('https://unpkg.com/normalize.css') layer(normalize);
 
 @layer normalize, base, demo;
@@ -216,13 +217,14 @@
     background-attachment: fixed;
   }
 
-  main {
+main {
     min-height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+    padding-top: 20vh; 
   }
 
   .header-logo-img {
@@ -331,11 +333,11 @@ li a {
   position: relative;
 }
 
-ul li:last-child {
+footer {
     background: transparent !important;
     box-shadow: none !important;
     display: flex;
-    padding-top: 20px;
+    margin: 20px 0;
     justify-content: center; 
     font-family: monospace;
     font-size: 0.85rem;
