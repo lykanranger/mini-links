@@ -29,3 +29,15 @@ var typed = new Typed('.typing-text', {
     loop: true,
     contentType: 'html'
   });
+
+// SCROLL DOWN 
+
+window.addEventListener('scroll', function() {
+  const scrollHint = document.getElementById('scroll-hint');
+  
+  if (window.scrollY > 5) {
+    scrollHint.classList.add('hidden');
+  } else {
+    scrollHint.classList.remove('hidden');
+  }
+});
