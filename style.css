@@ -388,6 +388,11 @@ footer {
     letter-spacing: 1px;   
 }
 
+.typing-text {
+  font-size: .8rem;
+}
+
 .highlight-name {
     color: #ec6fff;
 }
+
