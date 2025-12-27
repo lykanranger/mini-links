@@ -21,14 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // TYPING ANIMATION
 
+var year = new Date().getFullYear();
+
 var typed = new Typed('.typing-text', {
-    strings: ['Designed by <span class="highlight-name">Karun</span>', '© 2025 All Rights Reserved'],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 1000,
-    loop: true,
-    contentType: 'html'
-  });
+  strings: [
+    'Created by <span class="highlight-name">Karun</span>',
+    `© ${year} All Rights Reserved`
+  ],
+  typeSpeed: 100,
+  backSpeed: 50,
+  backDelay: 1000,
+  loop: true,
+  contentType: 'html'
+});
 
 // SCROLL DOWN 
 
