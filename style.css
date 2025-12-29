@@ -210,7 +210,7 @@
   }
 
   body {
-    background-image: url('img/bgimage.jpeg');
+    background-image: url('img/bgimage.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -258,7 +258,7 @@
   align-items: center;
   margin-bottom: 25px;
   transition: opacity 0.5s ease, visibility 0.5s;
-  color: rgb(152, 152, 152);
+  color: rgb(171, 171, 171);
   font-size: 0.9rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -279,7 +279,7 @@
   transform: translateX(-50%);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #df5dff;
+  border-top: 5px solid #000000;
 }
 
 @keyframes bounce {
@@ -389,7 +389,7 @@ footer {
 }
 
 .highlight-name {
-    color: #ec6fff;
+    color: #6edbff;
 }
 
 @media (max-width: 600px) {
