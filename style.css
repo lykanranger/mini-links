@@ -214,7 +214,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 
   main {
@@ -397,6 +397,7 @@ footer {
     font-size: 0.7rem;
   }
 }
+
 
 
 
