@@ -218,7 +218,7 @@
         #002147 75%, 
         #000000 95%
     );
-    background-attachment: fixed;
+    background-attachment: scroll;
     margin: 0;
   }
 
@@ -402,6 +402,7 @@ footer {
     font-size: 0.7rem;
   }
 }
+
 
 
 
