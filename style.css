@@ -210,11 +210,16 @@
   }
 
   body {
-    background-image: url('img/bgimage.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(
+        to bottom, 
+        #ffffff 0%, 
+        #ffffff 10%, 
+        #0059b3 45%, 
+        #002147 75%, 
+        #000000 95%
+    );
     background-attachment: fixed;
+    margin: 0;
   }
 
   main {
@@ -397,6 +402,7 @@ footer {
     font-size: 0.7rem;
   }
 }
+
 
 
 
