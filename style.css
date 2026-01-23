@@ -38,6 +38,7 @@
     width: 100%;
     max-width: 300px;
     padding: 0 20px;
+    transition: opacity 0.25s ease;
   }
 
   .hello__svg {
@@ -59,6 +60,10 @@
     0% { stroke-dashoffset: 5800; }
     100% { stroke-dashoffset: 0; }
   }
+
+  .hide-hello {
+    opacity: 0;
+  }  
 
   header {
     position: sticky;
@@ -210,16 +215,11 @@
   }
 
   body {
-    background: linear-gradient(
-        to bottom, 
-        #ffffff 0%, 
-        #ffffff 10%, 
-        #0059b3 45%, 
-        #002147 75%, 
-        #000000 95%
-    );
+    background-image: url('img/bgimage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: scroll;
-    margin: 0;
   }
 
   main {
@@ -402,11 +402,3 @@ footer {
     font-size: 0.7rem;
   }
 }
-
-
-
-
-
-
-
-
