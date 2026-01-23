@@ -215,11 +215,17 @@
   }
 
   body {
-    background-image: url('img/bgimage.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+      to bottom,
+      #f7fcff 10%,
+      #8fc3ea 45%,
+      #4a8fcd 60%,
+      #1e5fa3 72%,
+      #000000 100%
+    );
+    background-attachment: fixed;
   }
 
   main {
@@ -402,3 +408,4 @@ footer {
     font-size: 0.7rem;
   }
 }
+
