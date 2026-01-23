@@ -1,22 +1,22 @@
 // LOADING ANIMATION
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const loadingContainer = document.querySelector('.loading-container');
+  const helloDiv = document.querySelector('.hello__div');
   const islandBar = document.querySelector('.island__bar');
 
   setTimeout(() => {
+    helloDiv.classList.add('hide-hello');
+  }, 4000);
+
+  setTimeout(() => {
     loadingContainer.style.opacity = '0';
-    
-    setTimeout(() => {
-      loadingContainer.style.display = 'none';
-      
-      setTimeout(() => {
-        islandBar.classList.add('show-airpods');
-      }, 2500);
-      
-    }, 500);
-    
-  }, 4500);
+  }, 4000);
+
+  setTimeout(() => {
+    loadingContainer.style.display = 'none';
+    islandBar.classList.add('show-airpods');
+  }, 4700);
 });
 
 // TYPING ANIMATION
