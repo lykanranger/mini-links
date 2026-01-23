@@ -3,6 +3,40 @@
 
 @layer normalize, base, demo;
 
+@layer base {
+  *, *:after, *:before {
+    box-sizing: border-box;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
 @layer demo {
   :root {
     --accent: hsl(10 20% 30%);
@@ -214,19 +248,19 @@
     animation-range: 0 calc(var(--header-height) * 0.425);
   }
 
-  body {
-    min-height: 100vh;
-    margin: 0;
-    background: linear-gradient(
-      to bottom,
-      #f7fcff 10%,
-      #8fc3ea 45%,
-      #4a8fcd 60%,
-      #1e5fa3 72%,
-      #000000 100%
-    );
-    background-attachment: fixed;
-  }
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    #f7fcff 10%,
+    #8fc3ea 45%,
+    #4a8fcd 60%,
+    #1e5fa3 72%,
+    #000000 100%
+  );
+  background-attachment: fixed;
+}
 
   main {
     min-height: 90vh;
@@ -358,31 +392,6 @@ li a {
   justify-content: center;
 }
 
-@layer base {
-  *, *:after, *:before {
-    box-sizing: border-box;
-  }
-
-  body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
-  }
-
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-}
-
 .island__bar {
   position: relative;
 }
@@ -408,4 +417,3 @@ footer {
     font-size: 0.7rem;
   }
 }
-
