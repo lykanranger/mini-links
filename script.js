@@ -25,7 +25,7 @@ var year = new Date().getFullYear();
 
 var typed = new Typed('.typing-text', {
   strings: [
-    'Created by <span class="highlight-name">Karun</span>',
+    'Created by <span class="highlight-name">KΛRUN</span>',
     `© ${year} All Rights Reserved`
   ],
   typeSpeed: 100,
@@ -46,3 +46,4 @@ window.addEventListener('scroll', function() {
     scrollHint.classList.remove('hidden');
   }
 });
+
