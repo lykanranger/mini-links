@@ -2,21 +2,39 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const loadingContainer = document.querySelector('.loading-container');
-  const helloDiv = document.querySelector('.hello__div');
-  const islandBar = document.querySelector('.island__bar');
+  const helloDiv         = document.querySelector('.hello__div');
+  const tapScreen        = document.getElementById('tap-screen');
+  const islandBar        = document.querySelector('.island__bar');
+  const audio            = document.getElementById('bg-audio');
 
+  // Step 1 — after hello SVG finishes (4s), fade it out
   setTimeout(() => {
     helloDiv.classList.add('hide-hello');
   }, 4000);
 
+  // Step 2 — after hello has faded (~4.4s), show TAP TO CONTINUE
   setTimeout(() => {
-    loadingContainer.style.opacity = '0';
-  }, 4000);
+    tapScreen.classList.add('visible');
+  }, 4400);
 
-  setTimeout(() => {
-    loadingContainer.style.display = 'none';
-    islandBar.classList.add('show-airpods');
-  }, 6700);
+  // Step 3 — user taps anywhere on the tap screen
+  tapScreen.addEventListener('click', function onTap() {
+    tapScreen.removeEventListener('click', onTap); // fire once only
+
+    // Start music immediately on tap — loop forever
+    audio.loop   = true;
+    audio.volume = 0.6;
+    audio.play().catch(() => {}); // catch autoplay policy silently
+
+    // Fade out the entire loading container
+    loadingContainer.style.opacity = '0';
+
+    // After fade completes, hide it and reveal AirPods
+    setTimeout(() => {
+      loadingContainer.style.display = 'none';
+      islandBar.classList.add('show-airpods');
+    }, 650);
+  });
 });
 
 // TYPING ANIMATION
@@ -35,7 +53,7 @@ var typed = new Typed('.typing-text', {
   contentType: 'html'
 });
 
-// SCROLL DOWN 
+// SCROLL UP 
 
 window.addEventListener('scroll', function() {
   const scrollHint = document.getElementById('scroll-hint');
