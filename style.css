@@ -63,7 +63,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10000;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.6s ease;
   }
 
   .hello__div {
@@ -71,10 +71,10 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: 100%;
-    max-width: 300px;
-    padding: 0 20px;
-    transition: opacity 0.25s ease;
+    width: clamp(220px, 60vw, 480px);
+    padding: 0 5vw;
+    transition: opacity 0.4s ease;
+    position: absolute;
   }
 
   .hello__svg {
@@ -83,12 +83,12 @@
     stroke-linecap: round;
     stroke-miterlimit: 10;
     stroke-width: 40px;
-    stroke-dasharray: 5800px;
-    stroke-dashoffset: 5800px;
+    stroke-dasharray: 5800;
+    stroke-dashoffset: 5800;
     animation: anim__hello linear 4s forwards;
     width: 100%;
     height: auto;
-    max-height: 300px;
+    display: block;
     margin: 0 auto;
   }
 
@@ -104,6 +104,40 @@
 
   .hide-hello {
     opacity: 0;
+    pointer-events: none;
+  }
+
+  /* TAP TO CONTINUE screen */
+  #tap-screen {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  #tap-screen.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #tap-text {
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+    font-size: clamp(0.75rem, 2.5vw, 0.95rem);
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    animation: tap-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes tap-pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.35; }
   }
 
   header {
@@ -323,7 +357,7 @@
     }
   }
 
-  .scroll-down {
+  .scroll-up {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -350,7 +384,7 @@
     transform: translateX(-50%);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
   }
 
   @keyframes bounce {
