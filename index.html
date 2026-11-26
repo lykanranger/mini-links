@@ -41,7 +41,12 @@
           style="fill: none; stroke: url(#purpleGradient); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 40px;" />
       </svg>
     </div>
+    <div id="tap-screen">
+      <span id="tap-text">TAP TO CONTINUE</span>
+    </div>
   </div>
+
+  <audio id="bg-audio" src="bg.mp3" loop preload="auto"></audio>
 
   <header>
     <div class="island__container">
@@ -65,8 +70,8 @@
   </header>
 
   <main>
-    <div id="scroll-hint" class="scroll-down">
-      <span aria-hidden="true">Scroll Down</span>
+    <div id="scroll-hint" class="scroll-up">
+      <span aria-hidden="true">Scroll Up</span>
       <div class="arrow"></div>
     </div>
     <ul>
